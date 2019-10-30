@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Games</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of games">
+    <ion-item (click)="changeUrl(item)">
+      <ion-card-content>
+        <ion-label>{{ item?.name }} | {{ item?.type}}
+        </ion-label>
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+</ion-content>
